@@ -1,0 +1,70 @@
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text-banner h2 {
+    font-size: 20px;
+}
+
+.text-banner p {
+    font-size: 18px;
+}
+
+.form-container {
+    display: block;
+}
+
+.form-container input {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: block;
+    text-align: center;
+}
+
+.watch {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.text-card {
+    width: auto;
+    margin-left: 0;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.animation img {
+    width: 80%;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.animation-mobile {
+    left: 0;
+}
+
+/* .block {
+    text-align: left;
+    left: 25%;
+}
+
+@media (max-width: 615px) {
+    .block {
+        left: 19%;
+    }
+}
+
+@media (min-width: 620px) {
+    .block {
+        left: 23%;
+    }
+} */
