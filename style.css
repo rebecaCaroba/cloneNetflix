@@ -385,6 +385,9 @@ footer p {
     margin-bottom: 2px;
     cursor: pointer;
     position: relative;
+    text-align: left;
+    font-size: 20px;
+    max-width: 100%;
 }
 
 label::after {
@@ -410,6 +413,10 @@ input[type="radio"] {
     transition: max-height 0.5s, padding 0.5s;
 }
 
+.cont a {
+    color: #fff;
+}
+
 .question input[type="radio"]:checked + label + .cont {
     max-height: 600px;
     padding: 30px 20px;
@@ -420,4 +427,6 @@ input[type="radio"] {
     bottom: -8%;
     
 }
+
+
 
