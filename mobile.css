@@ -23,6 +23,7 @@ h1 {
 .card-container {
     display: block;
     text-align: center;
+    gap: 10px;
 }
 
 .watch {
@@ -32,7 +33,7 @@ h1 {
 
 .text-card {
     width: auto;
-    margin-left: 0;
+    padding: 20px;
 }
 
 .card h2 {
@@ -48,23 +49,11 @@ h1 {
     flex-direction: column;
 }
 
-.animation-mobile {
-    left: 0;
-}
-
-/* .block {
+.block {
+    height: 20%;
     text-align: left;
-    left: 25%;
 }
 
-@media (max-width: 615px) {
-    .block {
-        left: 19%;
-    }
+.text-block small {
+    font-size: 12px;
 }
-
-@media (min-width: 620px) {
-    .block {
-        left: 23%;
-    }
-} */

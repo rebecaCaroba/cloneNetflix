@@ -190,7 +190,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 90px;
-    height: 100%;
+    width: 100%;
 }
 
 .animation {
@@ -240,7 +240,6 @@ p {
 
 /**/
 
-
 .animation-mobile {
     position: relative;
     display: flex;
@@ -255,28 +254,35 @@ p {
     position: absolute;
     border: 2px solid #ffffff40;
     border-radius: 10px;
-    padding: 18px;
     background-color: #000000;
     box-shadow: 0 0 2em 0 #000;
+    bottom: 10%;
+    left: 20%;
+    height: 18%;
+    width: 60%;
+}
+
+.block-container {
     display: flex;
     align-items: center;
-    gap: 15px;
-    bottom: 10%;
-    left: 22%;
-    min-width: 15em;
-    width: 55%;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 18px;
 }
 
-.text-block h2 {
-    font-size: 18px;
-    font-weight: 600;
+.text-block {
+    width: 170px;
 }
 
-.text-block p {
-    font-size: 13px;
-    font-weight: 400;
+.text-block small {
     color: #0071eb;
-    ;
+    font-weight: 400;
+}
+
+.icon img{
+    width: 100%;
+    height: 60px;
 }
 
 /* input */
@@ -354,6 +360,64 @@ footer p {
     display: inline-block;
 }
 
+
+/* questions */
 .questions{
     text-align: center;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1000px;/**/
 }
+
+.question li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.question li label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 48px;
+    font-weight: 100;
+    position: absolute;
+    right: 2%;
+    bottom: 8%;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.question .cont {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.question input[type="radio"]:checked + label + .cont {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.question input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+    bottom: -8%;
+    
+}
+
