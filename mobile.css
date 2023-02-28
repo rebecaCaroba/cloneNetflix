@@ -54,6 +54,17 @@ h1 {
     text-align: left;
 }
 
+.block-container img  {
+    margin: 5px;
+    height: 50px;
+    gap: 0;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
 .text-block small {
     font-size: 12px;
 }
